@@ -11,8 +11,8 @@
 <body>
 
   <form action="save.php" method="post">
-    Name: <input type="text" name="name"><br>
-    E-mail: <input type="text" name="email"><br>
+    <input type="text" name="name" value="inserisci il nome"><br>
+    <input type="text" name="email" value="inserisci l email"><br>
     <input type="submit">
   </form>
 
@@ -41,6 +41,7 @@
                             <td>" . $i++ . "</td>
                             <td>" . $row["name"] . "</td>
                             <td>" . $row["email"] . "</td>
+                            <td> <a href=details.php?id=" . $row["ID"]  . ">Details</a> </td>
                             <td> <a class='button' href=delete.php?id=" . $row["ID"]  . ">delete</td>
                         </tr>
                         ";
