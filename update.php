@@ -6,8 +6,8 @@
   $id = $_POST["id"];
 
   $sql = "UPDATE PERSONA SET
-          name='$name',
-          email='$email'
+          name=\"$name\",
+          email=\"$email\"
           WHERE id=$id";
 
 
